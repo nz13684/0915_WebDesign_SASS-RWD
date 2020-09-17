@@ -26,11 +26,12 @@
 }
 
 #navigation .logo {
-  font-family: 'Bebas Neue', cursive;
-  font-size: 32px;
+  font-family: "Bebas Neue", cursive;
+  font-size: 42px;
   text-decoration: none;
   -webkit-transition: 0.3s;
   transition: 0.3s;
+  letter-spacing: 2px;
 }
 
 #navigation .logo:hover {
@@ -42,6 +43,7 @@
   padding: 60px;
   -webkit-transition: 0.3s;
   transition: 0.3s;
+  letter-spacing: 10px;
 }
 
 #navigation .link a:hover {
@@ -70,5 +72,42 @@
   width: 100%;
   height: 100vh;
   background: #eeeeee;
+}
+
+#about {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+}
+
+#about h2 {
+  font-size: 300px;
+  font-family: "Bebas Neue", cursive;
+  letter-spacing: 20px;
+  padding-left: 20px;
+  margin-top: 20px;
+}
+
+#about p {
+  padding: 30px;
+  margin-bottom: 50px;
+}
+
+.title {
+  font-size: 36px;
+  padding: 20px;
+}
+
+.button-box {
+  padding: 10px 60px;
+  border: 2px solid #252525;
+  text-decoration: none;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.button-box:hover {
+  background: #252525;
+  color: white;
 }
 /*# sourceMappingURL=style.css.map */

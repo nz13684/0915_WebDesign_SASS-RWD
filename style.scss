@@ -4,6 +4,11 @@
 $color-main: #252525;
 $color-sub: #6eb3ff;
 
+//文字大小: 最大
+$font-size-big:36px;
+//字體
+$font-family-main: "Bebas Neue", cursive;
+
 *{
     margin: 0;
     padding: 0;
@@ -25,10 +30,11 @@ $color-sub: #6eb3ff;
     background: white;
 
     .logo {
-        font-family: 'Bebas Neue', cursive;
-        font-size: 32px;
+        font-family: $font-family-main;
+        font-size: 42px;
         text-decoration: none;
         transition: 0.3s;
+        letter-spacing: 2px;
 
         &:hover{
             color: $color-sub;
@@ -40,6 +46,7 @@ $color-sub: #6eb3ff;
             text-decoration: none;
             padding: 60px;
             transition: 0.3s;
+            letter-spacing: 10px;
 
             &:hover{
                 color: $color-sub;
@@ -69,4 +76,41 @@ $color-sub: #6eb3ff;
     width: 100%;
     height: 100vh;
     background: #eeeeee;
+}
+
+//關於我
+#about{
+    width: 100%;
+    height: 100%;
+    text-align: center;
+
+    h2{
+        font-size: 300px;
+        font-family: $font-family-main;
+        letter-spacing: 20px;
+        padding-left: 20px;
+        margin-top: 20px;
+    }
+
+    p{
+        padding: 30px;
+        margin-bottom: 50px;
+    }
+}
+
+.title{
+    font-size: $font-size-big;
+    padding: 20px;
+}
+
+.button-box{
+    padding: 10px 60px;
+    border: 2px solid $color-main;
+    text-decoration: none;
+    transition: 0.3s;
+
+    &:hover{
+        background: $color-main;
+        color: white;
+    }
 }
