@@ -1,5 +1,45 @@
-@import url("https://fonts.google.com/specimen/Grandstander")
+@import url("https://fonts.google.com/specimen/Grandstander") 
+//主要色與次要色
+$color-main: #252525;
+$color-sub: #6eb3ff;
 
-#navigation .social img {
-    filter: invert(42%) sepia(95%) saturate(1944%) hue-rotate(164deg) brightness(98%) contrast(101%);
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 微軟正黑體;
+    color: $color-main;
 }
+
+//導覽列
+#navigation {
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 20px 0;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1);
+
+    .logo{
+        font-family: 'Bebas Neue', cursive;
+        font-size: 32px;
+        text-decoration: none
+        transition: 0.3s;
+
+        &:hover{
+            color: $color-sub;
+        }
+    }
+
+    .social {
+        
+        img {
+    
+            filter: invert(42%) sepia(95%) saturate(1944%) hue-rotate(164deg) brightness(98%) contrast(101%);
+            transition:0.2s;
+
+            &:hover{
+                filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(6deg) brightness(103%) contrast(103%);
+            }
+        }    
+    }    
+} 
