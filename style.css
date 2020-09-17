@@ -1,4 +1,45 @@
-h1 {
-  color: blue;
+@charset "UTF-8";
+@import url("https://fonts.google.com/specimen/Grandstander");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 微軟正黑體;
+  color: #252525;
+}
+
+#navigation {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+  padding: 20px 0;
+  -webkit-box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1);
+}
+
+#navigation .logo {
+  font-family: 'Bebas Neue', cursive;
+  font-size: 32px;
+  text-decoration: none;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+#navigation .logo:hover {
+  color: #6eb3ff;
+}
+
+#navigation .social img {
+  -webkit-filter: invert(42%) sepia(95%) saturate(1944%) hue-rotate(164deg) brightness(98%) contrast(101%);
+          filter: invert(42%) sepia(95%) saturate(1944%) hue-rotate(164deg) brightness(98%) contrast(101%);
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+#navigation .social img:hover {
+  -webkit-filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(6deg) brightness(103%) contrast(103%);
+          filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(6deg) brightness(103%) contrast(103%);
 }
 /*# sourceMappingURL=style.css.map */
