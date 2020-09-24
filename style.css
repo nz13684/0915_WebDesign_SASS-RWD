@@ -31,7 +31,7 @@
   text-decoration: none;
   -webkit-transition: 0.3s;
   transition: 0.3s;
-  letter-spacing: 10px;
+  letter-spacing: 2px;
 }
 
 .logo:hover {
@@ -99,7 +99,8 @@
 
 .title {
   font-size: 36px;
-  padding: 50px;
+  padding: 35px;
+  text-align: center;
 }
 
 .button-box {
@@ -132,6 +133,8 @@
   margin: 0 auto;
   -ms-grid-columns: (1fr)[3];
       grid-template-columns: repeat(3, 1fr);
+  -ms-grid-rows: (340px)[2];
+      grid-template-rows: repeat(2, 340px);
   grid-gap: 30px 45px;
 }
 

@@ -39,7 +39,7 @@ $font-family-main: "Bebas Neue", cursive;
             font-size: 42px;
             text-decoration: none;
             transition: 0.3s;
-            letter-spacing: 10px;
+            letter-spacing: 2px;
     
             &:hover{
                 color: $color-sub;
@@ -48,6 +48,7 @@ $font-family-main: "Bebas Neue", cursive;
     
         .link{
             text-align: center;
+
             a {
                 text-decoration: none;
                 padding: 30px 30px 30px 40px;
@@ -106,7 +107,8 @@ $font-family-main: "Bebas Neue", cursive;
 //標題
 .title{
     font-size: $font-size-big;
-    padding: 50px;
+    padding: 35px;
+    text-align: center;
 }
 
 //按鈕：盒型
@@ -139,6 +141,7 @@ $font-family-main: "Bebas Neue", cursive;
         margin: 0 auto;
         //repeat(數量，一格的寬度)
         grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, 340px);
         //格線間隙: 上下 左右
         grid-gap: 30px 45px;
 
