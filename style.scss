@@ -4,6 +4,7 @@
 $color-main: #252525;
 $color-sub: #6eb3ff;
 $color-bg-gray: #f9f9f9;
+$color-white: #cdcdcd;
 
 //文字大小: 最大
 $font-size-big: 36px;
@@ -32,48 +33,48 @@ $font-family-main: "Bebas Neue", cursive;
     width: 100%;
     background: white;
 
-    .logo {
-        font-family: $font-family-main;
-        font-size: 42px;
-        text-decoration: none;
-        transition: 0.3s;
-        letter-spacing: 2px;
-
-        &:hover{
-            color: $color-sub;
-        }
-    }
-
-    .link{
-        text-align: center;
-        a {
+} 
+        .logo {
+            font-family: $font-family-main;
+            font-size: 42px;
             text-decoration: none;
-            padding: 30px 30px 30px 40px;
             transition: 0.3s;
             letter-spacing: 10px;
-
+    
             &:hover{
                 color: $color-sub;
             }
         }
-    }
-
-    .social {
-        text-align: right;
-        
-        img {
     
-            filter: invert(9%) sepia(11%) saturate(1944%) hue-rotate(336deg) brightness(100%) contrast(86%);
-            transition:0.2s;
-            width: 32px;
-            margin-left: 30px;
-
-            &:hover{
-                filter: invert(63%) sepia(8%) saturate(2974%) hue-rotate(177deg) brightness(105%) contrast(102%);
+        .link{
+            text-align: center;
+            a {
+                text-decoration: none;
+                padding: 30px 30px 30px 40px;
+                transition: 0.3s;
+                letter-spacing: 10px;
+    
+                &:hover{
+                    color: $color-sub;
+                }
             }
+        }
+    
+        .social {
+            text-align: right;
+            
+            img {
+        
+                filter: invert(9%) sepia(11%) saturate(1944%) hue-rotate(336deg) brightness(100%) contrast(86%);
+                transition:0.2s;
+                width: 32px;
+                margin-left: 30px;
+    
+                &:hover{
+                    filter: invert(63%) sepia(8%) saturate(2974%) hue-rotate(177deg) brightness(105%) contrast(102%);
+                }
+            }    
         }    
-    }    
-} 
 
 //橫幅
 #banner {
@@ -173,6 +174,31 @@ $font-family-main: "Bebas Neue", cursive;
 //頁尾
 footer{
     background: $color-main;
-    padding: 50px;
+    padding: 90px 0;
     text-align: center;
+
+    .logo{
+        color: $color-white;
+    }
+
+    .link{
+        a{
+            color: $color-white;
+        }
+    }
+
+    .social{
+        text-align: center;
+
+        img{
+            filter: invert(86%) sepia(0%) saturate(0%) hue-rotate(73deg) brightness(98%) contrast(91%);
+            margin: 30px 20px;
+        }
+    }
+
+    #copyright{
+        color: $color-white;
+        font-size: 8px;
+        margin-top: 50px;
+    }
 }
