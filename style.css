@@ -115,7 +115,25 @@
   color: white;
 }
 
-.works {
-  text-align: center;
+#works {
+  height: 100vh;
+  background: #f9f9f9;
+}
+
+#works #work-box {
+  width: 1200px;
+  display: -ms-grid;
+  display: grid;
+  margin: 0 auto;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  grid-gap: 30px 45px;
+}
+
+#works #work-box .work-box-small img {
+  display: block;
+  width: 100%;
+  height: 300px;
+  background: #000;
 }
 /*# sourceMappingURL=style.css.map */

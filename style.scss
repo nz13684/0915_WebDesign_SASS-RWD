@@ -121,6 +121,27 @@ $font-family-main: "Bebas Neue", cursive;
     }
 }
 
-.works{
-    text-align: center;
+//作品集
+#works{
+    height: 100vh;
+    background: $color-bg-gray;
+
+    #work-box{
+        width: 1200px;
+        display: grid;
+        margin: 0 auto;
+        //repeat(數量，一格的寬度)
+        grid-template-columns: repeat(3, 1fr);
+        //格線間隙: 上下 左右
+        grid-gap: 30px 45px;
+
+        .work-box-small{
+            img{
+                display: block;
+                width: 100%;
+                height: 300px;
+                background: #000;
+            }
+        }
+    }
 }
