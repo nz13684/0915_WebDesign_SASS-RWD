@@ -115,6 +115,11 @@
   color: white;
 }
 
+.button-div {
+  text-align: center;
+  margin-top: 50px;
+}
+
 #works {
   height: 100vh;
   background: #f9f9f9;
@@ -141,5 +146,15 @@
   text-align: center;
   -webkit-transform: translateY(-20px);
           transform: translateY(-20px);
+}
+
+#works #work-box .work-box-small span {
+  display: inline-block;
+  border: 1.5px solid #000;
+  border-radius: 30px;
+  padding: 3px 12px;
+  margin-top: 12px;
+  margin-left: 10px;
+  font-size: 12px;
 }
 /*# sourceMappingURL=style.css.map */

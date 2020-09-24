@@ -121,6 +121,12 @@ $font-family-main: "Bebas Neue", cursive;
     }
 }
 
+//按鈕外的區塊
+.button-div{
+    text-align: center;
+    margin-top: 50px;
+}
+
 //作品集
 #works{
     height: 100vh;
@@ -145,11 +151,19 @@ $font-family-main: "Bebas Neue", cursive;
 
             h2{
                 text-align: center;
+                //變形: 位移 Y 軸(單位)
                 transform: translateY(-20px);
             }
 
             span{
-                
+
+                display: inline-block;
+                border: 1.5px solid #000;
+                border-radius: 30px;
+                padding: 3px 12px;
+                margin-top: 12px;
+                margin-left: 10px;
+                font-size: 12px;
 
             }
         }
