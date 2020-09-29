@@ -38,12 +38,14 @@ $mobile: 767px;
     width: 100%;
     background: white;
 
+    //選單
     #menu {
+        //桌電 : 隱藏
         @media screen and (min-width: $desktop){
             display: none;
         }
-
-        @media screen and (max-width: $mobile){
+        //平板 : 顯示
+        @media screen and (max-width: $table){
             display: block;
         }
     }
