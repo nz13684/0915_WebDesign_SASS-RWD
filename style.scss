@@ -27,9 +27,8 @@ $mobile: 767px;
 
 //導覽列
 #navigation {
-
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    //grid-template-columns: 1fr 1fr 1fr;
     padding: 20px 120px;
     box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1);
     align-items: center;
@@ -37,11 +36,18 @@ $mobile: 767px;
     position: fixed;
     width: 100%;
     background: white;
+    //深度軸 : 離眼睛越近數字越大
+    z-index: 1;
 
     //平板
     @media screen and (max-width: $table) {
         //格線樣板區域: "區域名稱"
         grid-template-areas: "logo social menu";
+    }
+
+    //手機
+    @media screen and (max-width: $mobile){
+       padding: 10px 6px; 
     }
 
     //選單
@@ -57,8 +63,11 @@ $mobile: 767px;
             margin-left: auto;
         }
 
-        @media screen and (max-width: $mobile)
-        
+        //手機
+        @media screen and (max-width: $mobile){
+            width: 32px;
+        }
+
     }
 
 } 
@@ -108,8 +117,15 @@ $mobile: 767px;
                 &:hover{
                     filter: invert(63%) sepia(8%) saturate(2974%) hue-rotate(177deg) brightness(105%) contrast(102%);
                 }
+
+                //手機
+                @media screen and (max-width: $mobile){
+                    margin-left: 0;
+                }
+        
             }    
-        }    
+        }   
+         
 
 //橫幅
 #banner {
@@ -124,16 +140,20 @@ $mobile: 767px;
     height: 100%;
     text-align: center;
 
-    @media screen and (max-width: $table){
-        width: 100%;
-    }
-
     h2{
         font-size: 420px;
         font-family: $font-family-main;
         letter-spacing: 30px;
         padding-left: 30px;
         margin-top: 50px;
+
+        //手機
+        @media screen and (max-width: $table){
+            font-size: 64px;
+            letter-spacing: 10px;
+            padding-left: 10px;
+            margin-top: 100px;
+        }
     }
 
     p{
@@ -172,6 +192,11 @@ $mobile: 767px;
 #works{
     height: 100vh;
     background: $color-bg-gray;
+    //手機
+    @media screen and (max-width: $mobile){
+        height: auto;
+        padding-bottom: 100px;
+    }
 
     #work-box{
         width: 1200px;
@@ -187,6 +212,13 @@ $mobile: 767px;
         @media screen and (max-width: $table){
             width: 100%;
             grid-template-columns: repeat(2, 1fr);
+            padding: 0 30px;
+        }
+
+        //手機
+        @media screen and (max-width: $mobile){
+            width: 100%;
+            grid-template-columns: repeat(1, 1fr);
             padding: 0 30px;
         }
 
