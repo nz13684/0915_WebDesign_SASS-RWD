@@ -38,6 +38,16 @@ $mobile: 767px;
     width: 100%;
     background: white;
 
+    #menu {
+        @media screen and (min-width: $desktop){
+            display: none;
+        }
+
+        @media screen and (max-width: $mobile){
+            display: block;
+        }
+    }
+
 } 
         .logo {
             font-family: $font-family-main;

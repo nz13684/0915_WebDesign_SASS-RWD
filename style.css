@@ -25,6 +25,18 @@
   background: white;
 }
 
+@media screen and (min-width: 1025px) {
+  #navigation #menu {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  #navigation #menu {
+    display: block;
+  }
+}
+
 .logo {
   font-family: "Bebas Neue", cursive;
   font-size: 42px;
