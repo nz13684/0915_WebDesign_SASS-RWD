@@ -25,6 +25,12 @@
   background: white;
 }
 
+@media screen and (max-width: 1024px) {
+  #navigation {
+        grid-template-areas: "logo social menu";
+  }
+}
+
 @media screen and (min-width: 1025px) {
   #navigation #menu {
     display: none;
@@ -34,6 +40,7 @@
 @media screen and (max-width: 1024px) {
   #navigation #menu {
     display: block;
+    margin-left: auto;
   }
 }
 
@@ -74,6 +81,7 @@
 
 .social {
   text-align: right;
+  grid-area: social;
 }
 
 .social img {

@@ -38,6 +38,12 @@ $mobile: 767px;
     width: 100%;
     background: white;
 
+    //平板
+    @media screen and (max-width: $table) {
+        //格線樣板區域: "區域名稱"
+        grid-template-areas: "logo social menu";
+    }
+
     //選單
     #menu {
         //桌電 : 隱藏
@@ -47,6 +53,8 @@ $mobile: 767px;
         //平板 : 顯示
         @media screen and (max-width: $table){
             display: block;
+            //左邊自動
+            margin-left: auto;
         }
     }
 
@@ -85,6 +93,7 @@ $mobile: 767px;
     
         .social {
             text-align: right;
+            grid-area: social;
             
             img {
         
