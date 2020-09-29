@@ -24,6 +24,12 @@
   z-index: 1;
 }
 
+@media screen and (min-width: 1025px) {
+  #navigation {
+        grid-template-areas: "logo link social";
+  }
+}
+
 @media screen and (max-width: 1024px) {
   #navigation {
         grid-template-areas: "logo social menu";

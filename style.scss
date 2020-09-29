@@ -39,6 +39,10 @@ $mobile: 767px;
     //深度軸 : 離眼睛越近數字越大
     z-index: 1;
 
+    @media screen and (min-width: $desktop) {
+        grid-template-areas: "logo link social";
+    }
+
     //平板
     @media screen and (max-width: $table) {
         //格線樣板區域: "區域名稱"
