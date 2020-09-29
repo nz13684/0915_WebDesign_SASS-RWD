@@ -110,6 +110,12 @@
   text-align: center;
 }
 
+@media screen and (max-width: 1024px) {
+  #about {
+    width: 100%;
+  }
+}
+
 #about h2 {
   font-size: 420px;
   font-family: "Bebas Neue", cursive;
@@ -162,6 +168,15 @@
   -ms-grid-rows: (340px)[2];
       grid-template-rows: repeat(2, 340px);
   grid-gap: 30px 45px;
+}
+
+@media screen and (max-width: 1024px) {
+  #works #work-box {
+    width: 100%;
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+    padding: 0 30px;
+  }
 }
 
 #works #work-box .work-box-small img {

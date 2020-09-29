@@ -56,6 +56,9 @@ $mobile: 767px;
             //左邊自動
             margin-left: auto;
         }
+
+        @media screen and (max-width: $mobile)
+        
     }
 
 } 
@@ -121,6 +124,10 @@ $mobile: 767px;
     height: 100%;
     text-align: center;
 
+    @media screen and (max-width: $table){
+        width: 100%;
+    }
+
     h2{
         font-size: 420px;
         font-family: $font-family-main;
@@ -175,6 +182,13 @@ $mobile: 767px;
         grid-template-rows: repeat(2, 340px);
         //格線間隙: 上下 左右
         grid-gap: 30px 45px;
+
+        //平板
+        @media screen and (max-width: $table){
+            width: 100%;
+            grid-template-columns: repeat(2, 1fr);
+            padding: 0 30px;
+        }
 
         .work-box-small{
             img{
