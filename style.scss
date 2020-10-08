@@ -142,6 +142,21 @@ $mobile: 767px;
     .dots{
         bottom: 60px;
     }
+
+    //平板
+    @media screen and (max-width: $table) {
+        height: 100%;
+
+        .slick-trackv {
+            height: 900px;
+        }
+
+        img {
+             // 物件適應：img 版本的 background-size 
+             object-fit: cover;
+
+        }
+    }
 }
 
 //關於我
@@ -308,7 +323,7 @@ footer{
     right: 30px;
     bottom: 30px;
     background: #eeeeee;
-    background-radius: 50%;
+    border-radius: 50%;
     padding: 10px;
     cursor: pointer;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
