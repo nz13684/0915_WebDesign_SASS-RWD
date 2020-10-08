@@ -3,9 +3,12 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=, initial-scale=1.0", user-scalable=no>
+    <meta name="viewport" content="width=, initial-scale=1.0" , user-scalable=no>
     <title>Document</title>
 
+    <!-- slick CDN -->
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
     <!-- AOS CDN-->
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="./style.css">
@@ -13,9 +16,9 @@
 
 <body>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-  <script>
-    AOS.init();
-  </script>
+    <script>
+        AOS.init();
+    </script>
     <!-- 導覽列 -->
     <nav id="navigation">
         <div>
@@ -23,7 +26,7 @@
         </div>
 
         <img src="./img/menu48.png" alt="選單" id="menu">
-        
+
         <div class="link">
             <a href="">關於我</a>
             <a href="">作品集</a>
@@ -34,59 +37,81 @@
             <a href=""><img src="./img/icon-yt.png" alt="YOUTUBE"></a>
             <a href=""><img src="./img/icon-fb.png" alt="FACEBOOK"></a>
             <a href=""><img src="./img/icon-mail.png" alt="E-MAIL"></a>
-            
+
         </div>
-        
+
     </nav>
-    
+
 
     <!-- 橫幅 -->
     <section id="banner">
-
+        <img src="https://fakeimg.pl/1280x720/?retina=1&text=橫幅1&font=noto">
+        <img src="https://fakeimg.pl/1280x720/?retina=1&text=橫幅2&font=noto">
+        <img src="https://fakeimg.pl/1280x720/?retina=1&text=橫幅3&font=noto">
+        <img src="https://fakeimg.pl/1280x720/?retina=1&text=橫幅4&font=noto">
+        <img src="https://fakeimg.pl/1280x720/?retina=1&text=橫幅5&font=noto">
     </section>
 
     <!-- 關於我 -->
     <section id="about">
-        <h1 id="title">關於我</h1>
-        <h2 data-aos="filp-right" data-aos-offset="300" data-aos-duration="1500" data-aos-easing="ease-in-out" data-aos-mirror="false" data-aos-once="true">{CHEN}</h2>
+        <h1 class="title" data-aos="slide-right" data-aos-duration="1000" data-aos-offset="200" data-aos-once="true">關於我
+        </h1>
+        <h2 data-aos="filp-right" data-aos-offset="300" data-aos-duration="1500" data-aos-easing="ease-in-out-sine"
+            data-aos-mirror="false" data-aos-once="true" data-aos-once="true">{CHEN}</h2>
+        <!-- data-aos 動畫 -->
+        <!-- data-aos-offset 位移：往上為正 -->
+        <!-- data-aos-delay 延遲 -->
+        <!-- data-aos-duration 持續時間：毫秒 0 - 3000 -->
+        <!-- data-aos-easing 緩動 -->
+        <!-- data-aos-mirror 雙向 true 允許雙向 false 不允許 -->
+        <!-- data-aos-once 播放一次 true 一次 false 不限次數 -->
         <p>我是一位開發者</p>
+        <h2 data-aos="filp-right" data-aos-offset="300" data-aos-duration="1500" data-aos-easing="ease-in-out-sine"
+            data-aos-mirror="false" data-aos-once="true">{CHEN}</h2>
         <a href="" class="button-box">關於我</a>
     </section>
 
     <!-- 作品集 -->
     <section id="works">
-        <h1 class="title">作品集</h1>
+        <h1 class="title" data-aos="slide-right" data-aos-duration="1000" data-aos-offset="200" data-aos-once="true">作品集
+        </h1>
         <div id="work-box">
-            <div class="work-box-small" data-aos="zoom-in" data-aos-offset="350" data-aos-duration="1000">
+            <div class="work-box-small" data-aos="zoom-in" data-aos-offset="350" data-aos-duration="1000"
+                data-aos-once="true">
                 <img src="" alt="">
                 <span>類別</span>
                 <h2>作品名稱</h2>
             </div>
-            <div class="work-box-small"   data-aos="zoom-in" data-aos-offset="350" data-aos-duration="1000" data-aos-delay="400">
+            <div class="work-box-small" data-aos="zoom-in" data-aos-offset="350" data-aos-duration="1000"
+                data-aos-once="true" data-aos-delay="400">
                 <img src="" alt="">
                 <span>類別</span>
                 <h2>作品名稱</h2>
             </div>
-            <div class="work-box-small" data-aos="zoom-in" data-aos-offset="350" data-aos-duration="1000" data-aos-delay="800">
+            <div class="work-box-small" data-aos="zoom-in" data-aos-offset="350" data-aos-duration="1000"
+                data-aos-once="true" data-aos-delay="800">
                 <img src="" alt="">
                 <span>類別</span>
                 <h2>作品名稱</h2>
             </div>
-            <div class="work-box-small" data-aos="zoom-in" data-aos-offset="350" data-aos-duration="1000">
+            <div class="work-box-small" data-aos="zoom-in" data-aos-offset="350" data-aos-duration="1000"
+                data-aos-once="true">
                 <img src="" alt="">
                 <span>類別</span>
                 <h2>作品名稱</h2>
             </div>
-            <div class="work-box-small" data-aos="zoom-in" data-aos-offset="350" data-aos-duration="1000" data-aos-delay="400">
+            <div class="work-box-small" data-aos="zoom-in" data-aos-offset="350" data-aos-duration="1000"
+                data-aos-once="true" data-aos-once="true" data-aos-delay="400">
                 <img src="" alt="">
                 <span>類別</span>
                 <h2>作品名稱</h2>
             </div>
-            <div class="work-box-small" data-aos="zoom-in" data-aos-offset="350" data-aos-duration="1000" data-aos-delay="800">
+            <div class="work-box-small" data-aos="zoom-in" data-aos-offset="350" data-aos-duration="1000"
+                data-aos-once="true" data-aos-delay="800">
                 <img src="" alt="">
                 <span>類別</span>
                 <h2>作品名稱</h2>
-            </div>      
+            </div>
         </div>
         <div class="button-div">
             <a href="" class="button-box">作品集</a>
@@ -96,9 +121,10 @@
     <!-- 頁尾 -->
     <footer>
         <div>
-            <a href="./index.html" class="logo">{CHEN}</a>
+            <a href="./index.html" class="logo" data-aos="fade-down" data-aos-duration="1000"
+                data-aos-once="true">{CHEN}</a>
         </div>
-        
+
         <div class="social">
             <a href=""><img src="./img/icon-github.png" alt="GIT HUB"></a>
             <a href=""><img src="./img/icon-yt.png" alt="YOUTUBE"></a>
@@ -115,11 +141,19 @@
         </div>
     </footer>
 
+    <!-- jQuery CDN -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!--  Slick CDN  -->
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script>
+        $("banner").slick();
+    </script>
+
     <!-- ASO CDN -->
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-  <script>
-    AOS.init();
-  </script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>
