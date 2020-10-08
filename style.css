@@ -139,9 +139,11 @@
   #banner .slick-trackv {
     height: 900px;
   }
-  #banner img {
-    -o-object-fit: cover;
-       object-fit: cover;
+}
+
+@media screen and (max-width: 767px) {
+  #banner .slick-trackv {
+    height: 500px;
   }
 }
 
