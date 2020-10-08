@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="./style.css">
 </head>
 
-<body>
+<body id="top">
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
         AOS.init();
@@ -45,18 +45,18 @@
 
     <!-- 橫幅 -->
     <section id="banner">
-        <img src="https://fakeimg.pl/1280x720/?retina=1&text=橫幅1&font=noto">
-        <img src="https://fakeimg.pl/1280x720/?retina=1&text=橫幅2&font=noto">
-        <img src="https://fakeimg.pl/1280x720/?retina=1&text=橫幅3&font=noto">
-        <img src="https://fakeimg.pl/1280x720/?retina=1&text=橫幅4&font=noto">
-        <img src="https://fakeimg.pl/1280x720/?retina=1&text=橫幅5&font=noto">
+        <img src="https://fakeimg.pl/1280x720/?retina=1&text=橫幅 1&font=noto">
+        <img src="https://fakeimg.pl/1280x720/?retina=1&text=橫幅 2&font=noto">
+        <img src="https://fakeimg.pl/1280x720/?retina=1&text=橫幅 3&font=noto">
+        <img src="https://fakeimg.pl/1280x720/?retina=1&text=橫幅 4&font=noto">
+        <img src="https://fakeimg.pl/1280x720/?retina=1&text=橫幅 5&font=noto">
     </section>
 
     <!-- 關於我 -->
     <section id="about">
         <h1 class="title" data-aos="slide-right" data-aos-duration="1000" data-aos-offset="200" data-aos-once="true">關於我
         </h1>
-        <h2 data-aos="filp-right" data-aos-offset="300" data-aos-duration="1500" data-aos-easing="ease-in-out-sine"
+        <h2 data-aos="fade" data-aos-offset="300" data-aos-duration="2000" data-aos-easing="ease-in-out-sine"
             data-aos-mirror="false" data-aos-once="true" data-aos-once="true">{CHEN}</h2>
         <!-- data-aos 動畫 -->
         <!-- data-aos-offset 位移：往上為正 -->
@@ -141,12 +141,21 @@
         </div>
     </footer>
 
+    <!-- 返回頂端按鈕 -->
+    <img src="./img/top arrow.png" alt="返回頂端" id="arrow" data-gte-target="top" data-gte-offset="0">
+
+    <!-- 前往指定元素 CDN -->
+    <script src="https://kid421.github.io/Web_JavaScript_GoToElement/goToElement.js"></script>
     <!-- jQuery CDN -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <!--  Slick CDN  -->
     <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script>
-        $("banner").slick();
+        $("banner").slick({
+            arrows: false,
+            dots: true,
+            dotsClass: "slick-dots dots"
+        });
     </script>
 
     <!-- ASO CDN -->

@@ -125,6 +125,11 @@
   width: 100%;
   height: 100vh;
   background: #eeeeee;
+  overflow: hidden;
+}
+
+#banner .dots {
+  bottom: 60px;
 }
 
 #about {
@@ -272,5 +277,25 @@ footer #copyright {
   color: #cdcdcd;
   font-size: 8px;
   margin-top: 50px;
+}
+
+.logo-small {
+  color: #cdcdcd;
+  font-family: "Bebas Neue", cursive;
+  letter-spacing: 3px;
+  padding-left: 3px;
+  font-size: 16px;
+}
+
+#arrow {
+  position: fuxed;
+  right: 30px;
+  bottom: 30px;
+  background: #eeeeee;
+  background-radius: 50%;
+  padding: 10px;
+  cursor: pointer;
+  -webkit-box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+          box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
 }
 /*# sourceMappingURL=style.css.map */

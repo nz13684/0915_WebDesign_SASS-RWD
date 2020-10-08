@@ -136,6 +136,12 @@ $mobile: 767px;
     width: 100%;
     height: 100vh;
     background: #eeeeee;
+    //溢出 : 隱藏
+    overflow: hidden;
+
+    .dots{
+        bottom: 60px;
+    }
 }
 
 //關於我
@@ -285,4 +291,25 @@ footer{
         font-size: 8px;
         margin-top: 50px;
     }
+}
+
+//小 logo
+.logo-small {
+    color: $color-white;
+    font-family: $font-family-main;
+    letter-spacing: 3px;
+    padding-left: 3px;
+    font-size: 16px;
+}
+
+//返回頂端按鈕
+#arrow{
+    position: fuxed;
+    right: 30px;
+    bottom: 30px;
+    background: #eeeeee;
+    background-radius: 50%;
+    padding: 10px;
+    cursor: pointer;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
 }
